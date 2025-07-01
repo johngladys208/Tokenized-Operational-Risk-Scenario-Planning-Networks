@@ -1,0 +1,19 @@
+[project]
+name = 'Tokenized-Operational-Risk-Scenario-Planning-Networks'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.scenario-planner-verification]
+path = 'contracts/scenario-planner-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
